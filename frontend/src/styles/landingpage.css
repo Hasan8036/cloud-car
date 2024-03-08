@@ -1,0 +1,99 @@
+/* landingpage.module.css */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    font-family: 'Urbanist', sans-serif;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgb(57, 168, 161);
+    color: #060505;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .navLinks a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-left: 1rem;
+    background: none;
+    border: none;
+    cursor:pointer;
+    padding-left: 3cm;
+    font-style:bold;
+  }
+  
+  .authLinks button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px; /* Makes the buttons more oval */
+    transition: background-color 0.3s ease;
+    
+  }
+  
+  .authLinks button:hover {
+    background-color: #dedede; /* A light grey color for hover effect on login button */
+    color: #333; /* Text color for hover state */
+  }
+  
+  /* Specific styles for the login button */
+  .loginBtn {
+    background-color: white;
+    color: #333; /* Ensures the text is visible on a white background */
+  }
+  
+  .loginBtn:hover {
+    background-color: #f8f8f8; /* Slightly different shade for hover state */
+  }
+  
+  /* Specific styles for the signup button */
+  .signupBtn {
+    background-color: #000000; /* Black background for signup button */
+    color: white; /* Ensures the text is visible on a black background */
+    margin-left: 0.5rem;
+  }
+  
+  .signupBtn:hover {
+    background-color: #444; /* Slightly lighter black for hover state */
+  }
+  
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start of the flex container, which is left */
+    justify-content: flex-start; /* Align items to the start of the container, which is top */
+    height: calc(100vh - 68px); /* Adjusted for the height of the navbar */
+    background: url('../../public/lamborghini.png') center center no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: left;
+    padding: 4rem; /* Add padding on all sides */
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem; /* Reduced space below h1 */
+    align-self: flex-start; /* Aligns the h1 to the start of the flex container on the cross axis */
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    align-self: flex-start; /* Aligns the paragraph to the start of the flex container on the cross axis */
+  }
